@@ -1,0 +1,132 @@
+import React, { useEffect, useRef, Fragment } from "react";
+import { Link } from "react-router-dom";
+
+import selfPortrait from "./images/selfPortrait.png";
+import temple from "./images/temple.png";
+import scaryGuy from "./images/scaryGuy.png";
+import deer from "./images/deer.png";
+import soldier from "./images/soldier.png";
+import skull from "./images/skull.png";
+
+
+const GalleryPage = () => {
+  const artworks = [
+    {
+      id: 1,
+      title: "I Cease to Be",
+      year: "2024",
+      image: selfPortrait,
+      dimensions: "8 × 12 in",
+      description: "This self-portrait was created using natural outdoor lighting to capture a balanced interplay of light and shadow, highlighting both negative and positive spaces.",
+      medium: "Gouache Paint",
+    },
+    {
+      id: 2,
+      title: "Kukulcan: Whispers of the Past",
+      year: "2022",
+      image: temple,
+      dimensions: "10 × 8 in",
+      description: "This painting captures a stunning landscape view of El Castillo, also known as the Temple of Kukulcan. Located in Chichén Itzá, this historic site holds deep agricultural and cultural significance, reflecting the rich history of the ancient Maya civilization.",
+      medium: "Acrylic",
+    },
+    {
+      id: 3,
+      title: "A Sacrifice",
+      year: "2022",
+      image: scaryGuy,
+      dimensions: "24 × 18 in",
+      description: "This artwork holds the most meaning and impact of anything I’ve created so far. Inspired by the history of Kukulcan and the ancient Maya, it reflects the significance of “Maya Blue,” a pigment made from clay and dye. Before sacrifices to Chaak, the rain deity, victims were covered in this pigment, a ritual believed to bring rain during droughts. This painting captures that moment—a helpless victim, covered in vibrant blue and blood, offered in hopes of sustaining the Mayan people. A fun backstory: I created this piece during my senior year of high school, and it was displayed in the hallway alongside other mixed media projects. Unfortunately, it was stolen and never recovered. All I have left are the memories of its creation and this photo.",
+      medium: "Acrylic",
+    },
+    {
+      id: 4,
+      title: "Blood and Honor",
+      year: "2022",
+      image: soldier,
+      dimensions: "8 × 10 in",
+      description: "This is a portrait of a Mayan/Mesoamerican Indian Warrior. Dedicated to my father.",
+      medium: "Acrylic",
+    },
+    {
+      id: 5,
+      title: "Tranquil Haven",
+      year: "2024",
+      image: deer,
+      dimensions: "24 × 36 in",
+      description: "This painting is a commission for my grandmother, who loves deer. It depicts a buck and a doe peacefully enjoying the view and the water provided by nature. They are surrounded by a vibrant landscape filled with colorful flowers and lush greenery.",
+      medium: "Acrylic Paint",
+    },
+    {
+      id: 6,
+      title: "A Still Life Study",
+      year: "2023",
+      image: skull,
+      dimensions: "22 × 16 in",
+      description: "This piece features a carefully arranged composition of plastic bones, created as part of a still life project.",
+      medium: "Charcoal",
+    },
+];
+  const fadeRefs = useRef<(HTMLDivElement | null)[]>([]);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100");
+            entry.target.classList.remove("translate-y-10", "opacity-0");
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+    fadeRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+    return () => {
+      fadeRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+  return (
+    <div className="container mx-auto px-4 py-20 md:py-28">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="font-serif text-3xl md:text-4xl mb-2 tracking-wide text-center">
+          Gallery
+        </h1>
+        <div className="w-16 h-[1px] bg-[#8B0000] mx-auto mb-12"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+          {artworks.map((artwork, index) => (
+            <div
+              key={artwork.id}
+              ref={(el) => (fadeRefs.current[index] = el)}
+              className={`opacity-0 translate-y-10 transition-all duration-1000 ease-out`}
+              style={{
+                transitionDelay: `${index * 100}ms`,
+              }}
+            >
+              <Link to={`/artwork/${artwork.id}`} className="group block">
+                <div className="overflow-hidden mb-4">
+                  <img
+                    src={artwork.image}
+                    alt={artwork.title}
+                    className="w-full h-64 object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-90"
+                  />
+                </div>
+                <h3 className="font-serif text-lg mb-1 group-hover:text-[#8B0000] transition-colors duration-300">
+                  {artwork.title}
+                </h3>
+                <p className="text-sm font-light text-gray-500">
+                  {artwork.year} • {artwork.dimensions}
+                </p>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+export default GalleryPage;
