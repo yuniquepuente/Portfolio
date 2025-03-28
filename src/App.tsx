@@ -8,7 +8,7 @@ import AboutPage from "./pages/AboutPage.tsx";
 import Footer from "./components/Footer.tsx";
 export function App() {
   return (
-    <Router basename="/Portfolio">
+    <Router>
       <div className="min-h-screen bg-[#F5F5F5] font-sans text-[#1A1A1A]">
         <Header />
         <main className="pt-16">

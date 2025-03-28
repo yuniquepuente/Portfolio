@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1f1f29eb.css",
-    "main.js": "/Portfolio/static/js/main.149085f9.js",
-    "static/media/soldier.png": "/Portfolio/static/media/soldier.5b699c3f715f4632f2c0.png",
-    "static/media/temple.png": "/Portfolio/static/media/temple.b7c222e3b3c0ff5c8be0.png",
-    "static/media/deer.png": "/Portfolio/static/media/deer.fdd6bd046fcfc5ace2af.png",
-    "static/media/selfPortrait.png": "/Portfolio/static/media/selfPortrait.bfb0db9093565c4c5677.png",
-    "static/media/artist.png": "/Portfolio/static/media/artist.75eddaa4e39b08d7dee8.png",
-    "static/media/scaryGuy.png": "/Portfolio/static/media/scaryGuy.710eb4a1bd7742da9e1a.png",
-    "static/media/skull.png": "/Portfolio/static/media/skull.45ea02031d2bf7f0678b.png",
-    "index.html": "/Portfolio/index.html",
-    "main.1f1f29eb.css.map": "/Portfolio/static/css/main.1f1f29eb.css.map",
-    "main.149085f9.js.map": "/Portfolio/static/js/main.149085f9.js.map"
+    "main.css": "/static/css/main.1f1f29eb.css",
+    "main.js": "/static/js/main.8c8edf7f.js",
+    "static/media/soldier.png": "/static/media/soldier.5b699c3f715f4632f2c0.png",
+    "static/media/temple.png": "/static/media/temple.b7c222e3b3c0ff5c8be0.png",
+    "static/media/deer.png": "/static/media/deer.fdd6bd046fcfc5ace2af.png",
+    "static/media/selfPortrait.png": "/static/media/selfPortrait.bfb0db9093565c4c5677.png",
+    "static/media/artist.png": "/static/media/artist.75eddaa4e39b08d7dee8.png",
+    "static/media/scaryGuy.png": "/static/media/scaryGuy.710eb4a1bd7742da9e1a.png",
+    "static/media/skull.png": "/static/media/skull.45ea02031d2bf7f0678b.png",
+    "index.html": "/index.html",
+    "main.1f1f29eb.css.map": "/static/css/main.1f1f29eb.css.map",
+    "main.8c8edf7f.js.map": "/static/js/main.8c8edf7f.js.map"
   },
   "entrypoints": [
     "static/css/main.1f1f29eb.css",
-    "static/js/main.149085f9.js"
+    "static/js/main.8c8edf7f.js"
   ]
 }
