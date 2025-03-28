@@ -1,28 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.aef856be.css",
-    "main.js": "/static/js/main.9f4118f4.js",
-    "static/media/homepage.PNG": "/static/media/homepage.f65e168faae2dc660cef.PNG",
-    "static/media/demo.mp4": "/static/media/demo.371d23f7d9d7c3615c62.mp4",
-    "static/media/serviceSelection.PNG": "/static/media/serviceSelection.ad34cb243df251e6631b.PNG",
-    "static/media/instagramIntegration.PNG": "/static/media/instagramIntegration.c77fce75a0f26cf23395.PNG",
-    "static/media/responsiveDesign.PNG": "/static/media/responsiveDesign.d4492b4596595a492b83.PNG",
-    "static/media/contactForm.PNG": "/static/media/contactForm.3acec57c1e468fa2b963.PNG",
-    "static/media/signIn.PNG": "/static/media/signIn.00b8d10626da66aae81f.PNG",
-    "static/media/items.png": "/static/media/items.3894d14d6f125cc0a6c2.png",
-    "static/media/profile.jpeg": "/static/media/profile.5745b2504a2d42d1b724.jpeg",
-    "static/media/woodenItems.PNG": "/static/media/woodenItems.6abbf2b2d656b05ce1ce.PNG",
-    "static/media/users.png": "/static/media/users.ac9beeb63e1f3d9ddc78.png",
-    "static/media/home.PNG": "/static/media/home.034a81fe6cb1bbf58d65.PNG",
-    "static/media/categories.PNG": "/static/media/categories.fbf7bfa03bc24ac717f1.PNG",
-    "static/media/itemDetails.PNG": "/static/media/itemDetails.682fc96adb1837058b2d.PNG",
-    "static/media/editItem.PNG": "/static/media/editItem.b83bd0ed0d9c20da4bcf.PNG",
-    "index.html": "/index.html",
-    "main.aef856be.css.map": "/static/css/main.aef856be.css.map",
-    "main.9f4118f4.js.map": "/static/js/main.9f4118f4.js.map"
+    "main.css": "/Portfolio/static/css/main.1f1f29eb.css",
+    "main.js": "/Portfolio/static/js/main.149085f9.js",
+    "static/media/soldier.png": "/Portfolio/static/media/soldier.5b699c3f715f4632f2c0.png",
+    "static/media/temple.png": "/Portfolio/static/media/temple.b7c222e3b3c0ff5c8be0.png",
+    "static/media/deer.png": "/Portfolio/static/media/deer.fdd6bd046fcfc5ace2af.png",
+    "static/media/selfPortrait.png": "/Portfolio/static/media/selfPortrait.bfb0db9093565c4c5677.png",
+    "static/media/artist.png": "/Portfolio/static/media/artist.75eddaa4e39b08d7dee8.png",
+    "static/media/scaryGuy.png": "/Portfolio/static/media/scaryGuy.710eb4a1bd7742da9e1a.png",
+    "static/media/skull.png": "/Portfolio/static/media/skull.45ea02031d2bf7f0678b.png",
+    "index.html": "/Portfolio/index.html",
+    "main.1f1f29eb.css.map": "/Portfolio/static/css/main.1f1f29eb.css.map",
+    "main.149085f9.js.map": "/Portfolio/static/js/main.149085f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.aef856be.css",
-    "static/js/main.9f4118f4.js"
+    "static/css/main.1f1f29eb.css",
+    "static/js/main.149085f9.js"
   ]
 }

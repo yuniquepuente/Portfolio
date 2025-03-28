@@ -8,7 +8,7 @@ import AboutPage from "./pages/AboutPage.tsx";
 import Footer from "./components/Footer.tsx";
 export function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <div className="min-h-screen bg-[#F5F5F5] font-sans text-[#1A1A1A]">
         <Header />
         <main className="pt-16">
@@ -16,7 +16,7 @@ export function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/artwork/:id" element={<ArtworkPage />} />
-            <Route path="/about" element={<AboutPage/>} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </main>
         <Footer />

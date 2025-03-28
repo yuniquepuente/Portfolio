@@ -2,8 +2,7 @@
   "name": "yuniqueportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dantevargas.tech/",
-
+  "homepage": "https://yuniquepuente.github.io/Portfolio",
   "dependencies": {
     "cra-template-typescript": "1.2.0",
     "lucide-react": "^0.474.0",
